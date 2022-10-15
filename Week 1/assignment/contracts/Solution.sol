@@ -1,7 +1,9 @@
 // Upgrade the ether smart allet smart contract to allow ...
 // individuals withdraw any amount of etherereum ... they deposited in the smart contract.
 
-pragma solidity ^0.8.7;
+
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.7.0 <0.9.0;
 
 contract EtherWallet {
     address payable public owner;
@@ -11,20 +13,18 @@ contract EtherWallet {
     }
 
     // receive() external payable {}
-
     function deposit() external payable {
-        require(msg.sender);
-        payable () ;
     }
 
-    function withdraw(uint , any amount) external {
+    //withdraw an amount
+    function withdraw(uint _amount) external {
         require(msg.sender == owner, "caller is not owner");
-        payable(msg.sender).transfer(any amount);
+        payable(msg.sender).transfer(_amount);
     }
 
     function getBalance() external view returns (uint) {
         return address(this).balance;
     }
-
-
 }
+
+
