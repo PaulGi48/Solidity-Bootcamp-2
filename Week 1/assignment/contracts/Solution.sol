@@ -6,7 +6,12 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract EtherWallet {
-    address payable public owner;
+    address payable owner;
+
+        modifier ownerOnly() {
+        require(msg.sender == owner, "only the owner can call this function");
+        _;
+    }
 
     constructor() {
         owner = payable(msg.sender);

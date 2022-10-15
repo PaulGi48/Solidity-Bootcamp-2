@@ -3,7 +3,8 @@ export const deploy = async (contractName: string, arguments: Array<any>, from?:
     console.log(`deploying ${contractName}`)
     // Note that the script needs the ABI which is generated from the compilation artifact.
     // Make sure contract is compiled and artifacts are generated
-    const artifactsPath = `browser/contracts/artifacts/${contractName}.json` // Change this for different path
+    const artifactsPath = `browser/contracts/artifacts/EtherWallet.json` 
+    // path has been updated
 
     const metadata = JSON.parse(await remix.call('fileManager', 'getFile', artifactsPath))
     // 'web3Provider' is a remix global variable object
@@ -21,4 +22,4 @@ export const deploy = async (contractName: string, arguments: Array<any>, from?:
     // The contract is NOT deployed yet; we must wait until it is mined
     await contract.deployed()
     return contract
-}: Promise<any>
+}
