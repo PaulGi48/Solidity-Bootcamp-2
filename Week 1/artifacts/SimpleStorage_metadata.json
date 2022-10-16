@@ -1,18 +1,26 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.17+commit.8df45f5f"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "amount",
+				"name": "num",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,37 +35,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "_num",
 						"type": "uint256"
 					}
 				],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "withdraw",
+				"name": "set",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -76,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week 1/assignment/contracts/Solution.sol": "EtherWallet"
+			"Week 1/3_Variables.sol": "SimpleStorage"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Week 1/assignment/contracts/Solution.sol": {
-			"keccak256": "0x7f5247865ddb1ded41d00c8dc9b08c2b7311d8d959c055983a2edea5660cbdd4",
+		"Week 1/3_Variables.sol": {
+			"keccak256": "0x0a11b2734d338690aa4274fad54acba1e77b2c8a5b1dd1f55cd65c7c700bf4c4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4d644c9178de4e1552d1e2164aee194fad341f1d6da8805433ee8d7d3d29b463",
-				"dweb:/ipfs/QmYVozHAy35eqhtTGGy51Wp7H9GMBM7SmbCVq2HcpBt28T"
+				"bzz-raw://82cbb23874ba3151e85a4793839e726a425bd51665a5ebe13f48ccb161610d6f",
+				"dweb:/ipfs/QmZcZ9dr8D2c1XG2hVrfCXurJ1HbPasobcinQBCC4UzW41"
 			]
 		}
 	},

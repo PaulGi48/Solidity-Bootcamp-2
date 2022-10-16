@@ -17,17 +17,21 @@ contract EtherWallet {
         owner = payable(msg.sender);
     }
 
-    // receive() external payable {}
-    function deposit() external payable {
-    }
+    uint256 public amount ;
 
+    // receive() external payable {}
+    function deposit(uint256 _amount) public payable {
+    }
+  
     //withdraw an amount
-    function withdraw(uint _amount) external {
+    function withdraw(uint256 _amount) external {
         require(msg.sender == owner, "caller is not owner");
         payable(msg.sender).transfer(_amount);
     }
 
-    function getBalance() external view returns (uint) {
+
+    // view your balance
+    function getBalance() external view returns (uint256) {
         return address(this).balance;
     }
 }
