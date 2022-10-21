@@ -50,6 +50,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -91,11 +104,11 @@
 	},
 	"sources": {
 		"Week 1/assignment/contracts/Solution.sol": {
-			"keccak256": "0x7f5247865ddb1ded41d00c8dc9b08c2b7311d8d959c055983a2edea5660cbdd4",
+			"keccak256": "0xf60d808eff426c987e3cdb995295e86434febbe77c08f5aec720c83ec146c494",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4d644c9178de4e1552d1e2164aee194fad341f1d6da8805433ee8d7d3d29b463",
-				"dweb:/ipfs/QmYVozHAy35eqhtTGGy51Wp7H9GMBM7SmbCVq2HcpBt28T"
+				"bzz-raw://31ef92a4fd4842b9befe8db0b7d3e43849f0ed505a54aba44ec855e6e66db237",
+				"dweb:/ipfs/QmdsMAmfbR4PQQ2ufanP421BuArRjD2vLLKDXUe7gEQmSw"
 			]
 		}
 	},
