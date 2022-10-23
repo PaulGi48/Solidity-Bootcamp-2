@@ -89,7 +89,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week 1/assignment/contracts/Solution.sol": "EtherWallet"
+			"Week 2/assignment/contracts/Solution.sol": "EtherWallet"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -103,7 +103,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Week 1/assignment/contracts/Solution.sol": {
+		"Week 2/assignment/contracts/Solution.sol": {
 			"keccak256": "0xf60d808eff426c987e3cdb995295e86434febbe77c08f5aec720c83ec146c494",
 			"license": "MIT",
 			"urls": [
