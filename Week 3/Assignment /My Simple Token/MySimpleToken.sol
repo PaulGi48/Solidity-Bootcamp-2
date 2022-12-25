@@ -20,7 +20,7 @@ contract MySimpleToken is ERC20, Ownable {
          _mint(transfer, amount);
  }
      function remove (address, uint256 amount) external onlyOwner{
-         _burn (msg.sender, amount);
+         _remove (msg.sender, amount);
 
  }
 }

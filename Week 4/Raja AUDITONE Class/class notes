@@ -1,0 +1,9 @@
+
+DOS - Denial Of Service
+
+
+Requires 
+Python installed
+Open terminal ;
+pip3 install slither analyser
+pip3  sold-select install 0.8.0

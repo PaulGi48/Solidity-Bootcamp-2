@@ -1,0 +1,3 @@
+abi.encode encodes data into bytes.
+
+abi.decode decodes bytes back into data.
