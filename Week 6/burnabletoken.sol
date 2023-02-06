@@ -9,7 +9,11 @@ contract FungibleToken {
     mapping(address => uint256) public balanceOf;
     event Transfer(address indexed from, address indexed to, uint256 value);
 
-    constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _initialSupply) public {
+    constructor
+    () {
+
+    (string memory _name, string memory _symbol, uint8 _decimals, uint256 _initialSupply) public 
+    {
         name = _name;
         symbol = _symbol;
         decimals = _decimals;
